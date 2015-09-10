@@ -1,6 +1,6 @@
 #ifndef FRAMEQUEUE_H
 #define FRAMEQUEUE_H
-
+#include <cmath>
 #include <ctime>
 #include <queue>
 
@@ -11,6 +11,7 @@ class frameQueue
 public:
     frameQueue();
     void scroll(int score, bool meteo);
+    void reset();
     bool colCheck(sf::RectangleShape birdy , bool meteo);
     frame curObs()
     {
@@ -29,6 +30,8 @@ protected:
 private:
     frame current;
     bool scored;
+    double pattern;
+    vector<int> egress;
     void shuffle(int passed);
     float xshift;
     //queue<int>::at()

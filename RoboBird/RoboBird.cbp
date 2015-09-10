@@ -43,6 +43,10 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="Airstream.ttf" />
+		<Unit filename="DupPipe.png" />
+		<Unit filename="PBarA.png" />
+		<Unit filename="PBarB.png" />
+		<Unit filename="SdownPipe.png" />
 		<Unit filename="bg.png" />
 		<Unit filename="downPipe.png" />
 		<Unit filename="floorSprite.png" />
@@ -56,7 +60,12 @@
 		<Unit filename="src/controller.cpp" />
 		<Unit filename="src/frame.cpp" />
 		<Unit filename="src/frameQueue.cpp" />
+		<Unit filename="structions.png" />
+		<Unit filename="titlescr.png" />
 		<Unit filename="upPipe.png" />
+		<Unit filename="vapor1.png" />
+		<Unit filename="vapor2.png" />
+		<Unit filename="vapor3.png" />
 		<Extensions>
 			<code_completion />
 			<envvars />

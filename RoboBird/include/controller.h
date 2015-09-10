@@ -12,6 +12,8 @@ class controller
 public:
     controller();
     void threadTask(int button);
+    void activate(bool zoom){ scorched = zoom;}
+    int getPhase(){ return phase;}
     int getScore()
     {
         return passed;
@@ -21,14 +23,26 @@ public:
 protected:
 
 private:
+    sf::Sprite getFrame();
     sf::Texture downpipe;
     sf::Texture uppipe;
+    sf::Texture auppipe;
+    sf::Texture adownpipe;
     sf::Texture floorpipe;
     sf::Texture bk;
+    sf::Texture birdo;
     sf::Texture ground;
     sf::Texture fb;
+    sf::Texture title;
+    sf::Texture info;
+    sf::Texture vapI;
+    sf::Texture vapII;
+    sf::Texture vapIII;
     int passed;
+    int phase;
+    int delay;
     bool seal;
+    bool scorched;
     frameQueue assembly;
     birdy player;
 

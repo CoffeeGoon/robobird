@@ -2,9 +2,11 @@
 #define BIRDY_H
 #include <SFML/Graphics.hpp>
 #include <cmath>
-
+#include <iostream>
+using namespace std;
 class birdy
 {
+friend class controller;
 public:
     birdy();
     virtual ~birdy();
@@ -25,6 +27,8 @@ public:
     }
 protected:
 private:
+    sf::Texture* gliding;
+    sf::Texture* fireball;
     bool meteo;
     double ay;
     double x;

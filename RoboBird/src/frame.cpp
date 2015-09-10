@@ -36,47 +36,73 @@ frame::frame(int n)
     2: high pipe
     3: low pipe
     */
-
+type = n;
 switch(n)
     {
         case 1:
-            Pipes = new sf::RectangleShape[2];
+            Pipes = new sf::RectangleShape[6];
             Pipes[0] = sf::RectangleShape(sf::Vector2f(60, 130));
             Pipes[1] = sf::RectangleShape(sf::Vector2f(60, 180));
-            Pipes[0].setPosition(300, 0);
-            Pipes[1].setPosition(300, 220);
+            Pipes[2] = sf::RectangleShape( sf::Vector2f(60, 70) );
+            Pipes[3] = sf::RectangleShape( sf::Vector2f(60, 240) );
+            Pipes[4] = sf::RectangleShape(sf::Vector2f(60, 130));
+            Pipes[5] = sf::RectangleShape(sf::Vector2f(60, 180));
+            Pipes[0].setPosition(60, 0);
+            Pipes[1].setPosition(60, 220);
+             Pipes[2].setPosition(260, 0);
+            Pipes[3].setPosition(260, 160);
+             Pipes[4].setPosition(460, 0);
+            Pipes[5].setPosition(460, 220);
            // Pipes[0].setFillColor(sf::Color::Green);
             //Pipes[1].setFillColor(sf::Color::Green);
-            pipeNum = 2;
+            pipeNum = 6;
             break;
         case 2:
-            Pipes = new sf::RectangleShape[2];
+            Pipes = new sf::RectangleShape[6];
             Pipes[0] = sf::RectangleShape( sf::Vector2f(60, 70) );
             Pipes[1] = sf::RectangleShape( sf::Vector2f(60, 240) );
-            Pipes[0].setPosition(300, 0);
-            Pipes[1].setPosition(300, 160);
+             Pipes[2] = sf::RectangleShape(sf::Vector2f(60, 190));
+            Pipes[3] = sf::RectangleShape(sf::Vector2f(60, 120));
+            Pipes[4] = sf::RectangleShape(sf::Vector2f(60, 130));
+            Pipes[5] = sf::RectangleShape(sf::Vector2f(60, 180));
+            Pipes[0].setPosition(60, 0);
+            Pipes[1].setPosition(60, 160);
+            Pipes[2].setPosition(260, 0);
+            Pipes[3].setPosition(260 , 280);
+            Pipes[4].setPosition(460, 0);
+            Pipes[5].setPosition(460, 220);
            // Pipes[0].setFillColor(sf::Color::Green);
             //Pipes[1].setFillColor(sf::Color::Green);
-            pipeNum = 2;
+            pipeNum = 6;
             break;
         case 3:
-            Pipes = new sf::RectangleShape[2];
+            Pipes = new sf::RectangleShape[6];
             Pipes[0] = sf::RectangleShape(sf::Vector2f(60, 190));
             Pipes[1] = sf::RectangleShape(sf::Vector2f(60, 120));
-            Pipes[0].setPosition(300, 0);
-            Pipes[1].setPosition(300 , 280);
+             Pipes[2] = sf::RectangleShape(sf::Vector2f(60, 190));
+            Pipes[3] = sf::RectangleShape(sf::Vector2f(60, 120));
+             Pipes[4] = sf::RectangleShape( sf::Vector2f(60, 70) );
+            Pipes[5] = sf::RectangleShape( sf::Vector2f(60, 240) );
+            Pipes[0].setPosition(60, 0);
+            Pipes[1].setPosition(60, 280);
+            Pipes[2].setPosition(260, 0);
+            Pipes[3].setPosition(260, 280);
+            Pipes[4].setPosition(460, 0);
+            Pipes[5].setPosition(460, 160);
             //Pipes[0].setFillColor(sf::Color::Green);
             //Pipes[1].setFillColor(sf::Color::Green);
-
-            pipeNum = 2;
+            pipeNum = 6;
             break;
-Default:
+        default:
+            Pipes = new sf::RectangleShape[1];
+            Pipes[0] = sf::RectangleShape(sf::Vector2f(5, 10));
+            Pipes[0].setPosition(0, - 40);
             type = 0;
-            pipeNum = 0;
+            pipeNum = 1;
             break;
         };
 
-
+//pipeNum = 6;
 
 
 

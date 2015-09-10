@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1440798978 source:c:\users\kai\documents\dev\robobird\main.cpp
+1441909021 source:c:\users\kai\documents\dev\robobird\main.cpp
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
@@ -347,37 +347,39 @@
 	<string>
 	<vector>
 
-1440531610 c:\users\kai\documents\dev\robobird\include\frame.h
+1441833933 c:\users\kai\documents\dev\robobird\include\frame.h
 	<SFML/Graphics.hpp>
 	<SFML/System.hpp>
 	<iostream>
 
-1440301563 c:\users\kai\documents\dev\robobird\include\birdy.h
+1441573326 c:\users\kai\documents\dev\robobird\include\birdy.h
 	<SFML/Graphics.hpp>
 	<cmath>
+	<iostream>
 
-1440300089 c:\users\kai\documents\dev\robobird\include\framequeue.h
+1441841592 c:\users\kai\documents\dev\robobird\include\framequeue.h
+	<cmath>
 	<ctime>
 	<queue>
 	"frame.h"
 
-1440537872 c:\users\kai\documents\dev\robobird\include\controller.h
+1441841074 c:\users\kai\documents\dev\robobird\include\controller.h
 	<SFML/Graphics.hpp>
 	<vector>
 	"frame.h"
 	"frameQueue.h"
 	"birdy.h"
 
-1440351725 source:c:\users\kai\documents\dev\robobird\src\birdy.cpp
+1441574707 source:c:\users\kai\documents\dev\robobird\src\birdy.cpp
 	"birdy.h"
 
-1440798820 source:c:\users\kai\documents\dev\robobird\src\controller.cpp
+1441922496 source:c:\users\kai\documents\dev\robobird\src\controller.cpp
 	"controller.h"
 
-1440531607 source:c:\users\kai\documents\dev\robobird\src\frame.cpp
+1441844211 source:c:\users\kai\documents\dev\robobird\src\frame.cpp
 	"frame.h"
 
-1440796866 source:c:\users\kai\documents\dev\robobird\src\framequeue.cpp
+1441908996 source:c:\users\kai\documents\dev\robobird\src\framequeue.cpp
 	<iostream>
 	"frameQueue.h"
 

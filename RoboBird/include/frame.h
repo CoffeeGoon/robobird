@@ -40,6 +40,7 @@ public:
     {
         destroyed = true;
     }
+    int ty(){ return type;}
 protected:
 
 private:

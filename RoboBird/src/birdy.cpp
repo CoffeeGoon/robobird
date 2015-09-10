@@ -12,6 +12,34 @@ birdy::birdy()
     picture = sf::RectangleShape(sf::Vector2f(25, 25));
     picture.setPosition(x, y);
     picture.setFillColor(sf::Color::Red);
+    gliding = new sf::Texture[6];
+    int elm = 0;
+    for(int i = 0; i < 2; i++){
+     for(int j = 0; j < 3; j++){
+        sf::Texture temp;
+       if(!temp.loadFromFile("plasmabird.png", sf::IntRect(j * 80, i * 71, 80, 71 ))){
+        cout << "VWHHHATTT!!!" << endl;
+        exit(-1);
+       }
+
+       gliding[elm] = temp;
+       elm++;
+     }
+    }
+    //427
+    elm = 0;
+    fireball = new sf::Texture[9];
+    for(int k = 0; k < 2; k++){
+        for(int i = 0; i < 4; i++){
+            sf::Texture temp;
+            temp.loadFromFile("plasmabolt.png", sf::IntRect(i * 100, k * 75, 100, 75 ) );
+        fireball[elm] = temp;
+         elm++;
+        }
+    }
+    sf::Texture remain;
+    remain.loadFromFile("plasmabolt.png", sf::IntRect(0, 150, 100, 75 ));
+    fireball[8] = remain;
 }
 void birdy::setPos(double dx, double dy)
 {
